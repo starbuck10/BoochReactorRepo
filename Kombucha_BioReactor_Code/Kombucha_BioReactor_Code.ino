@@ -20,15 +20,17 @@ or the sensor will be damaged!)
 
 Hardware Connections (mini photocell):
 Prong 1: 5v power through breadboard
-Prong 2: A0 + 10 Ohm resistor + neutral (complete circuit) Please see this link for diagram:
-https://www.circuito.io/app?components=512,9088,11021
+Prong 2: A0 + 100k Ohm resistor + neutral (complete circuit) 
 
 These sensors are connected to a breadboard and all SDA connections are united and one single
 wire returns to the SDA board.  The same goes for the 3v power, GND, and SCL connection:
 Please note: the code will not function if your device addresses are not the same - see
 documentation on Controller Reader here for more details:
 https://docs.arduino.cc/learn/communication/wire
+
 Written by Joshua Coffie and Mary Etta West , CU Boulder ATLAS 2022
+All code and supporting diagrams may be found at the following repo:
+https://github.com/starbuck10/BoochReactorRepo
 *******************************************************************************/
 
 #include <SparkFun_Si7021_Breakout_Library.h>
